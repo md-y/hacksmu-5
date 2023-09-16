@@ -10,25 +10,26 @@
 </svelte:head>
 
 <div id="wrapper">
-	<SideBar/>
+	<SideBar />
 	<div id="wrapper-section">
-		<Header/>
+		<Header />
 		<!-- Other Content goes here -->
-        <slot/>
+		<slot />
 	</div>
-	
 </div>
 
 <style>
-	#wrapper{
+	#wrapper {
 		display: flex;
 	}
-	#wrapper-section{
+	#wrapper-section {
 		width: 100%;
 	}
-	:global(body){
-		background-color: #F8F9FC;
+	:global(body) {
+		background-color: #f8f9fc;
 		margin: 0;
-		font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+		font-family: Nunito, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+			Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+			'Noto Color Emoji';
 	}
 </style>
