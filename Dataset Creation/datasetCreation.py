@@ -218,46 +218,26 @@ for i in range(N):
             }
 
     asset = {
-        "Asset ID": {
-            "$numberInt": i,
-        },
+        "Asset ID": i,
         "Asset Type": assetInfo["name"],
-        "Floor": {
-            "$numberInt": random.randint(0,MAX_FLOOR)
-        },
-        "Room": {
-            "$numberInt": random.randint(0, MAX_ROOM)
-        },
+        "Floor": random.randint(0,MAX_FLOOR),
+        "Room": random.randint(0, MAX_ROOM),
         "Installation Date": install_date,
         "Manufacturer": "Manufacturer_" + str(random.randint(1,5)),
-        "Operational Time (hrs)": {
-            "$numberInt": str(random.randint(1,50000))
-        },
-        "Criticality Level": {
-            "$numberInt": assetInfo["criticality_level"]
-        },
+        "Operational Time (hrs)": str(random.randint(1,50000)),
+        "Criticality Level": assetInfo["criticality_level"],
         "Error Logs": error_logs,
         "Operational Logs": operational_logs,
         "Service Reports": service_reports,
-        "Time Between Services": {
-            "$numberInt": assetInfo["time_between_service"]
-        },
+        "Time Between Services": assetInfo["time_between_service"],
         "Work Orders": work_orders,
-        "Cost": {
-            "$numberInt": assetInfo["cost"],
-        },
-        "Energy Efficiency": {
-            "$numberInt": assetInfo["energy_efficiency"]
-        },
-        "Weight": {
-            "$numberInt": assetInfo["weight"]
-        },
-        "Height From Floor": {
-            "$numberDouble": assetInfo["height_from_floor"]
-        },
+        "Cost": assetInfo["cost"],
+        "Energy Efficiency": assetInfo["energy_efficiency"],
+        "Weight": assetInfo["weight"],
+        "Height From Floor": assetInfo["height_from_floor"],
         "location" : {
             "type": "Point",
-            "coordinates": ["",""]
+            "coordinates": [0,0]
         }
     }
 
