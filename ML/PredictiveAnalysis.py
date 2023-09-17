@@ -19,27 +19,29 @@ def average_service_interval(service_dates):
 
 # Extracting relevant features from the data
 def extract_features(asset):
+    # Handle cases where the values might be stored as strings by converting them to appropriate data types
     features = {
-        'Operational Time (hrs)': asset['Operational Time (hrs)']['$numberInt'],
-        'Criticality Level': asset['Criticality Level']['$numberInt'],
-        'Cost': asset['Cost']['$numberInt'],
-        'Energy Efficiency': asset['Energy Efficiency']['$numberInt'],
-        'Weight': asset['Weight']['$numberInt'],
-        'Height From Floor': float(asset['Height From Floor']['$numberDouble']) if '$numberDouble' in asset['Height From Floor'] else asset['Height From Floor']['$numberInt'],
-        'Average Time Between Services': average_service_interval(asset['Service Reports']),
-        'Number of Service Reports': len(asset['Service Reports']),
-        'Number of Work Orders': len(asset['Work Orders'])
+        'Operational Time (hrs)': int(asset['Operational Time (hrs)']),
+        'Criticality Level': int(asset['Criticality Level']),
+        'Cost': int(asset['Cost']),
+        'Energy Efficiency': int(asset['Energy Efficiency']),
+        'Weight': int(asset['Weight']),
+        'Height From Floor': int(asset['Height From Floor']),
+        'Average Time Between Services': average_service_interval(asset.get('Service Reports', [])),
+        'Number of Service Reports': len(asset.get('Service Reports', [])),
+        'Number of Work Orders': len(asset.get('Work Orders', []))
     }
     return features
 
 # Extract target variable: number of days until the next service
 def extract_target(asset):
-    last_service_date = datetime.strptime(asset['Service Reports'][-1]['Date Serviced'], '%m/%d/%Y')
-    average_interval = average_service_interval(asset['Service Reports'])
-    if average_interval:
-        predicted_next_service_date = last_service_date + timedelta(days=average_interval)
-        days_until_next_service = (predicted_next_service_date - last_service_date).days
-        return days_until_next_service
+    if 'Service Reports' in asset and asset['Service Reports']:
+        last_service_date = datetime.strptime(asset['Service Reports'][-1]['Date Serviced'], '%m/%d/%Y')
+        average_interval = average_service_interval(asset['Service Reports'])
+        if average_interval:
+            predicted_next_service_date = last_service_date + timedelta(days=average_interval)
+            days_until_next_service = (predicted_next_service_date - last_service_date).days
+            return days_until_next_service
     return None
 
 # Create a dataframe with features and target
@@ -59,17 +61,22 @@ X_train, X_test, y_train, y_test = train_test_split(df_features, df_target, test
 model = RandomForestRegressor(n_estimators=100, random_state=42)
 model.fit(X_train, y_train)
 
-# Predicting the number of days until the next service for all assets
-days_until_next_service_predictions = model.predict(df_features)
-
-# Adding the predicted number of days to the last service date to get the predicted next service date
-predicted_next_service_dates = {}
-for idx, asset in enumerate(data):
+def predict_service_date(asset_id):
+    asset = next((item for item in data if item['Asset ID'] == asset_id), None)
+    if asset is None:
+        return f"No asset found with Asset ID: {asset_id}"
+    
+    features = extract_features(asset)
+    # Ensure the features are in the same order as during training
+    features_df = pd.DataFrame([features])
+    features_df = features_df[X_train.columns]
+    
+    days_until_next_service = model.predict(features_df)[0]
     last_service_date = datetime.strptime(asset['Service Reports'][-1]['Date Serviced'], '%m/%d/%Y')
-    predicted_date = last_service_date + timedelta(days=int(days_until_next_service_predictions[idx]))
-    asset_id = asset['Asset ID']['$numberInt']
-    predicted_next_service_dates[asset_id] = predicted_date.strftime('%m/%d/%Y')
+    predicted_date = last_service_date + timedelta(days=int(days_until_next_service))
+    return predicted_date.strftime('%m/%d/%Y')
 
-# Print the dictionary with Asset ID and their predicted next service dates
-for asset_id, date in predicted_next_service_dates.items():
-    print(f"Asset ID: {asset_id}, Predicted Next Service Date: {date}")
+# Get asset ID from the user
+asset_id = int(input("Please enter the Asset ID: "))  # Convert input to integer
+predicted_date = predict_service_date(asset_id)
+print(f"Predicted Next Service Date for Asset ID {asset_id}: {predicted_date}")

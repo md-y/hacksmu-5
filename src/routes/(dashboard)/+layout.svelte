@@ -26,7 +26,7 @@
 		width: 100%;
 	}
 	:global(body) {
-		background-color: #f8f9fc;
+		background-color: #0f1116;
 		margin: 0;
 		font-family: Nunito, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
 			Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',

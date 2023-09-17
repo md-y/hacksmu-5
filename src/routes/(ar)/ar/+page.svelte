@@ -41,6 +41,7 @@
 		href="https://fonts.googleapis.com/css?family=Roboto:regular,black&display=swap"
 		rel="stylesheet"
 	/>
+	<title>Asset Finder</title>
 	{#if mounted}
 		<script src="https://aframe.io/releases/1.3.0/aframe.min.js" on:load={onLibraryLoad}></script>
 		{#if loadCount >= 1}

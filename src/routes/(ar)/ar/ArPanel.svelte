@@ -3,7 +3,7 @@
 	import { currentAsset } from './panelstore';
 
 	export let asset: Asset;
-	currentAsset.set(asset);
+	// currentAsset.set(asset);
 
 	// https://colordesigner.io/gradient-generator/?mode=lch#4A7646-C65E5E
 	const bgColors = [
