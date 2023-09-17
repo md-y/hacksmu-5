@@ -1,0 +1,138 @@
+[
+  {
+    "Asset ID": {
+      "$numberInt": 0
+    },
+    "Asset Type": "Elevator",
+    "Floor": {
+      "$numberInt": 100
+    },
+    "Room": {
+      "$numberInt": 167
+    },
+    "Installation Date": "3/6/2023",
+    "Manufacturer": "Manufacturer_3",
+    "Operational Time (hrs)": {
+      "$numberInt": "80645"
+    },
+    "Criticality Level": {
+      "$numberInt": 5
+    },
+    "Error Logs": [
+      {
+        "Logger Name": "Jerry",
+        "Date": "9/22/2017",
+        "Description": "This is a random error log"
+      }
+    ],
+    "Operational Logs": [
+      {
+        "Logger Name": "David",
+        "Log Description": "This is a random operational log",
+        "Log Date": "6/22/2022"
+      }
+    ],
+    "Service Reports": [
+      {
+        "Servicer Name": "Jerry",
+        "Service Description": "This is a random service description",
+        "Date Serviced": "1/13/2016",
+        "Cost": {
+          "$numberInt": 34702
+        },
+        "Service Reason": "This is a random service reason"
+      }
+    ],
+    "Time Between Services": {
+      "$numberInt": 4000
+    },
+    "Work Orders": [
+      {
+        "Filer Name": "David",
+        "File Date": "12/16/2016",
+        "Completion Date": "12/1/2018",
+        "Description": "This is a random description"
+      }
+    ],
+    "Cost": {
+      "$numberInt": 100000
+    },
+    "Energy Efficiency": {
+      "$numberInt": 5
+    },
+    "Weight": {
+      "$numberInt": 2000000
+    },
+    "Height From Floor": {
+      "$numberDouble": 0
+    }
+  },
+  {
+    "Asset ID": {
+      "$numberInt": 1
+    },
+    "Asset Type": "Elevator",
+    "Floor": {
+      "$numberInt": 100
+    },
+    "Room": {
+      "$numberInt": 104
+    },
+    "Installation Date": "12/5/2022",
+    "Manufacturer": "Manufacturer_0",
+    "Operational Time (hrs)": {
+      "$numberInt": "81838"
+    },
+    "Criticality Level": {
+      "$numberInt": 5
+    },
+    "Error Logs": [
+      {
+        "Logger Name": "Dolly",
+        "Date": "4/22/2020",
+        "Description": "This is a random error log"
+      }
+    ],
+    "Operational Logs": [
+      {
+        "Logger Name": "Dolly",
+        "Log Description": "This is a random operational log",
+        "Log Date": "8/25/2019"
+      }
+    ],
+    "Service Reports": [
+      {
+        "Servicer Name": "Sam",
+        "Service Description": "This is a random service description",
+        "Date Serviced": "4/21/2017",
+        "Cost": {
+          "$numberInt": 27636
+        },
+        "Service Reason": "This is a random service reason"
+      }
+    ],
+    "Time Between Services": {
+      "$numberInt": 4000
+    },
+    "Work Orders": [
+      {
+        "Filer Name": "Charlene",
+        "File Date": "2/17/2022",
+        "Completion Date": "11/19/2017",
+        "Description": "This is a random description"
+      }
+    ],
+    "Cost": {
+      "$numberInt": 100000
+    },
+    "Energy Efficiency": {
+      "$numberInt": 5
+    },
+    "Weight": {
+      "$numberInt": 2000000
+    },
+    "Height From Floor": {
+      "$numberDouble": 0
+    }
+  }
+]

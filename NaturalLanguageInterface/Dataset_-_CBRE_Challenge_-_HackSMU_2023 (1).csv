@@ -1,0 +1,501 @@
+Asset ID,Asset Type,Floor,Room,Installation Date,Manufacturer,Operational Time (hrs),Work Orders,Repairs,Last Serviced Date
+1,Elevator,7,103,1/6/2020,Manufacturer_4,39313,0,1,6/19/2023
+2,Plumbing System,6,109,6/11/2022,Manufacturer_2,20012,0,1,1/6/2023
+3,Fire Alarm,3,104,7/24/2019,Manufacturer_4,21546,10,5,9/24/2022
+4,Elevator,1,105,1/4/2021,Manufacturer_4,47038,1,1,5/23/2023
+5,Plumbing System,2,104,11/28/2022,Manufacturer_1,20022,10,3,1/29/2023
+6,Fire Alarm,2,103,7/29/2021,Manufacturer_3,1602,9,4,10/3/2022
+7,Fire Alarm,6,108,8/23/2020,Manufacturer_2,15650,2,3,1/13/2023
+8,HVAC,2,106,6/3/2021,Manufacturer_2,33932,1,4,8/9/2023
+9,Fire Alarm,6,108,7/30/2023,Manufacturer_5,24332,5,4,2/13/2023
+10,Elevator,7,101,7/24/2019,Manufacturer_4,18722,10,2,5/29/2023
+11,HVAC,3,103,6/19/2022,Manufacturer_2,29355,6,1,6/19/2023
+12,Electrical Panel,10,105,5/14/2022,Manufacturer_2,46525,8,1,11/25/2022
+13,Fire Alarm,6,106,4/13/2019,Manufacturer_2,43437,7,2,11/30/2022
+14,Elevator,1,103,3/11/2023,Manufacturer_4,18211,0,4,9/4/2023
+15,Fire Alarm,5,107,11/30/2019,Manufacturer_5,29177,8,4,8/22/2023
+16,HVAC,7,103,12/24/2019,Manufacturer_1,12953,2,4,11/17/2022
+17,Electrical Panel,2,101,12/17/2018,Manufacturer_5,48382,9,5,1/13/2023
+18,HVAC,7,109,5/5/2022,Manufacturer_2,24260,5,0,3/10/2023
+19,Fire Alarm,6,104,8/25/2021,Manufacturer_5,45428,2,3,6/8/2023
+20,Electrical Panel,1,102,3/26/2019,Manufacturer_2,29859,1,5,6/6/2023
+21,Plumbing System,10,102,8/23/2022,Manufacturer_5,5373,5,0,12/19/2022
+22,Fire Alarm,9,102,6/21/2023,Manufacturer_5,2923,8,3,7/20/2023
+23,Fire Alarm,2,105,7/5/2019,Manufacturer_2,459,9,3,10/20/2022
+24,Elevator,10,108,2/13/2023,Manufacturer_2,30723,2,5,6/29/2023
+25,Fire Alarm,3,110,6/13/2023,Manufacturer_1,3815,1,0,1/2/2023
+26,HVAC,6,106,9/13/2023,Manufacturer_4,5984,10,4,12/19/2022
+27,Elevator,3,103,7/8/2020,Manufacturer_5,16315,7,2,10/16/2022
+28,HVAC,8,105,9/22/2020,Manufacturer_3,25442,5,1,10/4/2022
+29,HVAC,9,110,6/21/2019,Manufacturer_1,15405,9,0,8/26/2023
+30,HVAC,10,108,7/1/2023,Manufacturer_5,38659,9,0,9/4/2023
+31,Fire Alarm,2,110,4/5/2020,Manufacturer_1,26381,5,2,1/13/2023
+32,Fire Alarm,5,110,3/14/2020,Manufacturer_3,25566,8,0,2/2/2023
+33,Elevator,10,104,4/18/2021,Manufacturer_5,24496,1,4,8/20/2023
+34,Fire Alarm,5,110,11/15/2018,Manufacturer_4,49799,6,4,5/7/2023
+35,Plumbing System,2,109,9/29/2018,Manufacturer_4,25785,2,5,2/2/2023
+36,Electrical Panel,6,103,11/11/2022,Manufacturer_5,47693,2,4,10/7/2022
+37,Electrical Panel,10,104,2/27/2023,Manufacturer_4,33942,1,2,7/8/2023
+38,Fire Alarm,1,105,4/10/2023,Manufacturer_4,28076,3,5,3/23/2023
+39,Electrical Panel,8,110,4/22/2022,Manufacturer_5,42265,7,3,4/27/2023
+40,Elevator,1,110,10/3/2021,Manufacturer_3,21657,1,5,3/13/2023
+41,Plumbing System,6,108,5/1/2022,Manufacturer_2,4771,4,4,6/27/2023
+42,Plumbing System,4,108,2/3/2022,Manufacturer_3,11849,8,1,6/6/2023
+43,Fire Alarm,7,109,9/15/2021,Manufacturer_3,39981,3,2,5/9/2023
+44,Elevator,4,103,6/20/2019,Manufacturer_3,13919,6,1,11/15/2022
+45,Electrical Panel,5,107,11/25/2019,Manufacturer_1,35895,1,3,11/25/2022
+46,HVAC,10,104,6/30/2023,Manufacturer_1,42586,4,0,12/19/2022
+47,Fire Alarm,3,104,7/26/2020,Manufacturer_4,4597,5,4,5/22/2023
+48,Fire Alarm,1,101,5/21/2020,Manufacturer_3,13760,2,0,9/8/2023
+49,HVAC,4,110,2/2/2020,Manufacturer_3,15170,3,5,1/12/2023
+50,Elevator,7,102,10/12/2020,Manufacturer_3,1679,0,0,10/3/2022
+51,Plumbing System,6,105,3/12/2023,Manufacturer_5,22689,7,0,6/17/2023
+52,HVAC,6,106,9/8/2021,Manufacturer_1,21301,0,2,1/26/2023
+53,HVAC,7,104,11/23/2021,Manufacturer_4,20024,1,0,9/23/2022
+54,Fire Alarm,6,109,1/25/2019,Manufacturer_1,38785,9,5,2/23/2023
+55,HVAC,3,102,3/17/2021,Manufacturer_4,36275,2,4,12/2/2022
+56,Electrical Panel,7,104,10/17/2020,Manufacturer_5,8751,2,3,3/13/2023
+57,HVAC,8,103,3/1/2020,Manufacturer_3,19138,8,4,6/21/2023
+58,Electrical Panel,4,109,4/28/2023,Manufacturer_3,17282,3,4,11/21/2022
+59,Electrical Panel,3,105,8/13/2019,Manufacturer_4,34874,0,3,9/12/2023
+60,Elevator,8,106,11/2/2021,Manufacturer_4,4878,0,4,2/13/2023
+61,Electrical Panel,5,106,12/15/2021,Manufacturer_2,17847,6,4,3/16/2023
+62,HVAC,6,104,1/11/2020,Manufacturer_5,31382,2,1,7/15/2023
+63,Fire Alarm,4,106,2/8/2020,Manufacturer_5,48717,9,1,11/6/2022
+64,Elevator,9,103,3/27/2023,Manufacturer_4,2588,5,1,8/14/2023
+65,Fire Alarm,10,107,9/9/2019,Manufacturer_2,43155,1,5,1/8/2023
+66,Electrical Panel,3,104,4/15/2022,Manufacturer_2,24258,8,1,5/11/2023
+67,Electrical Panel,8,104,7/9/2022,Manufacturer_3,46469,10,2,2/19/2023
+68,Electrical Panel,8,102,1/9/2020,Manufacturer_3,43961,5,3,10/1/2022
+69,HVAC,1,103,11/10/2019,Manufacturer_5,48665,9,3,5/5/2023
+70,Fire Alarm,4,103,3/22/2021,Manufacturer_5,26786,9,4,5/25/2023
+71,Plumbing System,5,103,9/12/2020,Manufacturer_3,36541,9,3,6/11/2023
+72,HVAC,2,108,7/30/2020,Manufacturer_3,42260,4,3,11/5/2022
+73,HVAC,1,109,11/25/2018,Manufacturer_3,15903,5,1,3/21/2023
+74,HVAC,7,104,8/14/2021,Manufacturer_4,4803,9,1,8/31/2023
+75,Fire Alarm,6,104,7/16/2022,Manufacturer_4,17144,1,0,1/25/2023
+76,Elevator,1,103,6/20/2023,Manufacturer_5,33025,6,0,2/10/2023
+77,Elevator,1,107,11/26/2020,Manufacturer_4,11401,8,0,11/19/2022
+78,HVAC,8,102,10/18/2020,Manufacturer_1,3056,6,4,7/26/2023
+79,HVAC,7,104,3/26/2022,Manufacturer_3,39351,5,2,1/16/2023
+80,Fire Alarm,1,104,2/20/2022,Manufacturer_5,45131,0,3,11/26/2022
+81,HVAC,2,105,10/3/2022,Manufacturer_5,49686,10,1,11/7/2022
+82,Electrical Panel,6,106,5/13/2022,Manufacturer_1,38238,0,4,5/30/2023
+83,HVAC,9,104,4/29/2022,Manufacturer_5,4155,0,0,3/31/2023
+84,HVAC,3,108,8/3/2022,Manufacturer_1,29071,1,3,8/28/2023
+85,Elevator,2,104,10/16/2021,Manufacturer_4,14417,1,5,7/27/2023
+86,HVAC,4,109,5/6/2022,Manufacturer_4,16159,3,0,9/16/2022
+87,HVAC,9,102,1/21/2021,Manufacturer_3,10652,0,4,5/24/2023
+88,Plumbing System,5,105,12/18/2018,Manufacturer_1,17196,8,4,3/5/2023
+89,Electrical Panel,2,110,2/9/2023,Manufacturer_2,3711,8,3,1/20/2023
+90,Fire Alarm,5,101,6/26/2022,Manufacturer_1,14222,8,4,5/28/2023
+91,Fire Alarm,5,110,8/4/2023,Manufacturer_5,1148,6,1,3/28/2023
+92,Elevator,6,103,12/11/2020,Manufacturer_4,45812,3,5,4/27/2023
+93,Elevator,10,109,8/22/2019,Manufacturer_4,25567,4,4,1/31/2023
+94,Plumbing System,5,110,3/29/2023,Manufacturer_3,47592,4,3,10/3/2022
+95,HVAC,1,104,10/25/2021,Manufacturer_2,20130,4,0,5/17/2023
+96,Elevator,7,103,7/17/2023,Manufacturer_3,5421,1,3,4/12/2023
+97,Fire Alarm,5,106,6/23/2019,Manufacturer_5,47403,8,0,6/21/2023
+98,Elevator,1,101,11/29/2021,Manufacturer_5,15141,5,3,5/5/2023
+99,Elevator,6,105,8/18/2022,Manufacturer_2,42016,0,0,4/18/2023
+100,Elevator,10,106,3/24/2020,Manufacturer_2,45053,2,1,4/26/2023
+101,Electrical Panel,9,110,2/21/2021,Manufacturer_3,39287,1,0,6/27/2023
+102,HVAC,7,103,6/19/2020,Manufacturer_5,35813,4,4,2/25/2023
+103,Plumbing System,1,109,4/5/2023,Manufacturer_5,29016,6,3,2/17/2023
+104,Electrical Panel,4,103,3/3/2021,Manufacturer_5,42020,2,4,6/18/2023
+105,Plumbing System,4,103,8/29/2022,Manufacturer_4,3415,8,1,9/18/2022
+106,Fire Alarm,4,104,9/17/2021,Manufacturer_3,7623,9,5,6/21/2023
+107,Electrical Panel,6,107,1/20/2020,Manufacturer_4,14785,8,1,4/22/2023
+108,Fire Alarm,8,101,8/15/2023,Manufacturer_3,49391,10,2,2/1/2023
+109,Plumbing System,6,102,12/30/2020,Manufacturer_5,47514,6,0,8/2/2023
+110,Elevator,7,105,5/8/2021,Manufacturer_3,11824,10,4,9/21/2022
+111,HVAC,3,105,7/30/2023,Manufacturer_4,14025,3,1,2/25/2023
+112,Electrical Panel,9,110,8/27/2020,Manufacturer_5,32834,10,4,12/25/2022
+113,Electrical Panel,1,108,3/11/2019,Manufacturer_1,8872,1,2,1/12/2023
+114,HVAC,3,106,7/21/2020,Manufacturer_4,15726,2,2,4/5/2023
+115,Plumbing System,6,102,12/1/2019,Manufacturer_5,29434,3,2,9/12/2023
+116,Electrical Panel,8,101,7/7/2021,Manufacturer_5,16296,3,0,2/6/2023
+117,Fire Alarm,7,109,9/23/2018,Manufacturer_1,30823,7,2,5/22/2023
+118,Fire Alarm,2,102,8/29/2020,Manufacturer_5,22876,1,0,3/21/2023
+119,Plumbing System,5,109,10/29/2022,Manufacturer_2,49976,8,5,9/2/2023
+120,HVAC,1,108,1/23/2020,Manufacturer_4,38667,8,4,3/3/2023
+121,Fire Alarm,4,102,12/10/2019,Manufacturer_1,3566,8,4,2/6/2023
+122,Plumbing System,2,110,4/4/2021,Manufacturer_3,982,0,1,11/11/2022
+123,Elevator,6,109,1/20/2023,Manufacturer_1,4322,9,1,5/8/2023
+124,HVAC,10,102,5/28/2021,Manufacturer_4,38956,5,0,12/27/2022
+125,HVAC,3,101,8/2/2019,Manufacturer_2,16513,4,2,3/16/2023
+126,Plumbing System,10,104,12/26/2022,Manufacturer_5,32628,8,4,8/20/2023
+127,HVAC,8,109,12/3/2019,Manufacturer_4,23208,8,3,4/15/2023
+128,Fire Alarm,2,108,10/21/2021,Manufacturer_3,29062,9,0,12/28/2022
+129,Plumbing System,5,105,4/22/2021,Manufacturer_4,634,0,0,1/13/2023
+130,Plumbing System,5,104,12/24/2020,Manufacturer_5,43184,8,0,4/21/2023
+131,Electrical Panel,3,105,8/14/2021,Manufacturer_4,7062,9,0,6/21/2023
+132,Elevator,2,104,3/4/2019,Manufacturer_2,49060,7,1,12/4/2022
+133,Electrical Panel,8,101,12/23/2020,Manufacturer_1,8130,8,1,1/2/2023
+134,HVAC,8,106,8/11/2022,Manufacturer_5,35901,4,5,6/7/2023
+135,Fire Alarm,4,108,7/28/2022,Manufacturer_2,31431,10,2,3/11/2023
+136,Plumbing System,7,106,8/10/2019,Manufacturer_1,26635,5,4,6/7/2023
+137,Plumbing System,1,106,12/7/2022,Manufacturer_1,42984,8,4,1/28/2023
+138,HVAC,1,105,9/21/2019,Manufacturer_1,20486,6,0,10/20/2022
+139,Fire Alarm,2,106,8/19/2023,Manufacturer_3,25399,10,0,5/17/2023
+140,HVAC,3,101,3/19/2019,Manufacturer_2,32408,5,4,2/12/2023
+141,Electrical Panel,10,107,11/17/2018,Manufacturer_5,32479,9,1,7/8/2023
+142,Fire Alarm,6,108,4/2/2019,Manufacturer_4,37299,3,1,6/16/2023
+143,Plumbing System,10,106,3/18/2020,Manufacturer_5,21031,2,2,9/14/2022
+144,HVAC,6,104,6/19/2022,Manufacturer_5,10515,9,2,8/20/2023
+145,HVAC,9,106,5/2/2019,Manufacturer_5,30699,5,3,12/23/2022
+146,Fire Alarm,8,106,9/9/2019,Manufacturer_1,7426,2,0,12/10/2022
+147,HVAC,8,109,2/28/2019,Manufacturer_2,37990,1,3,7/20/2023
+148,Plumbing System,1,109,12/24/2019,Manufacturer_5,32539,8,4,1/19/2023
+149,Electrical Panel,6,103,4/28/2019,Manufacturer_3,22686,2,2,10/3/2022
+150,Fire Alarm,3,102,11/7/2021,Manufacturer_4,39495,8,4,7/5/2023
+151,Plumbing System,5,106,1/20/2022,Manufacturer_5,18722,2,3,12/14/2022
+152,Electrical Panel,4,105,9/16/2022,Manufacturer_3,18695,8,2,12/30/2022
+153,HVAC,6,110,12/3/2021,Manufacturer_5,3350,4,5,6/20/2023
+154,Plumbing System,5,110,5/30/2019,Manufacturer_3,24441,1,5,1/15/2023
+155,Elevator,9,103,1/28/2022,Manufacturer_5,48435,2,3,5/15/2023
+156,Plumbing System,3,110,7/19/2021,Manufacturer_5,507,8,1,3/8/2023
+157,Plumbing System,8,102,1/29/2021,Manufacturer_2,27299,2,2,7/19/2023
+158,Plumbing System,2,102,6/2/2020,Manufacturer_3,43051,9,1,6/10/2023
+159,Plumbing System,7,105,1/16/2021,Manufacturer_2,9884,10,1,9/28/2022
+160,Elevator,7,101,1/6/2021,Manufacturer_3,37801,0,4,3/28/2023
+161,Plumbing System,6,110,6/28/2019,Manufacturer_2,27693,7,0,2/5/2023
+162,Plumbing System,8,101,6/26/2023,Manufacturer_5,32730,0,3,2/5/2023
+163,Plumbing System,2,105,4/13/2021,Manufacturer_1,15602,4,3,2/4/2023
+164,Electrical Panel,10,102,3/30/2019,Manufacturer_1,18749,0,3,6/2/2023
+165,HVAC,3,109,3/12/2021,Manufacturer_2,41862,2,5,10/30/2022
+166,Fire Alarm,3,110,8/1/2020,Manufacturer_4,36349,10,5,7/25/2023
+167,Fire Alarm,10,110,2/24/2022,Manufacturer_2,31247,10,0,4/11/2023
+168,HVAC,10,101,8/25/2023,Manufacturer_2,41164,10,5,10/2/2022
+169,Fire Alarm,3,102,1/14/2023,Manufacturer_3,27288,8,4,1/6/2023
+170,Electrical Panel,2,105,9/24/2022,Manufacturer_3,45356,3,4,6/26/2023
+171,Elevator,6,104,10/16/2018,Manufacturer_3,3785,2,2,6/29/2023
+172,Fire Alarm,9,106,3/2/2019,Manufacturer_1,39482,8,3,10/18/2022
+173,Plumbing System,5,108,3/30/2022,Manufacturer_1,30039,3,5,1/30/2023
+174,Fire Alarm,8,109,1/29/2023,Manufacturer_3,15428,7,5,12/15/2022
+175,Fire Alarm,7,102,3/26/2023,Manufacturer_1,44660,5,3,1/3/2023
+176,Elevator,7,108,6/28/2023,Manufacturer_2,26401,10,5,11/22/2022
+177,Plumbing System,9,108,8/23/2019,Manufacturer_2,12298,0,3,9/25/2022
+178,Fire Alarm,9,105,8/30/2023,Manufacturer_2,34852,4,5,12/1/2022
+179,Plumbing System,5,103,8/16/2021,Manufacturer_5,6722,0,4,12/12/2022
+180,Elevator,10,107,3/25/2021,Manufacturer_5,30359,2,2,8/14/2023
+181,Elevator,3,107,6/18/2019,Manufacturer_5,17322,4,0,3/21/2023
+182,Elevator,2,104,10/31/2018,Manufacturer_5,19049,0,0,3/29/2023
+183,HVAC,8,107,1/11/2021,Manufacturer_1,42424,7,5,5/31/2023
+184,Fire Alarm,5,110,3/9/2019,Manufacturer_5,20423,1,0,3/15/2023
+185,Electrical Panel,9,106,7/27/2023,Manufacturer_3,21258,10,3,3/25/2023
+186,Fire Alarm,7,105,10/10/2022,Manufacturer_3,31531,7,0,5/21/2023
+187,HVAC,4,103,6/5/2020,Manufacturer_4,48255,5,0,11/23/2022
+188,Elevator,3,103,7/10/2023,Manufacturer_2,37129,8,2,9/10/2023
+189,HVAC,8,106,1/2/2021,Manufacturer_2,32003,8,1,12/27/2022
+190,HVAC,8,108,5/4/2020,Manufacturer_1,41016,2,1,3/11/2023
+191,HVAC,7,104,5/10/2019,Manufacturer_2,9443,1,2,6/9/2023
+192,Electrical Panel,7,101,11/19/2019,Manufacturer_2,1852,2,4,7/18/2023
+193,Elevator,2,110,8/15/2023,Manufacturer_5,15947,5,2,3/4/2023
+194,Fire Alarm,10,106,5/10/2019,Manufacturer_4,14003,7,3,2/18/2023
+195,Plumbing System,3,101,4/19/2020,Manufacturer_5,33751,10,1,5/15/2023
+196,Fire Alarm,10,108,11/21/2018,Manufacturer_5,2858,6,1,2/18/2023
+197,Plumbing System,1,107,9/18/2022,Manufacturer_1,45083,10,5,9/27/2022
+198,HVAC,4,101,1/24/2021,Manufacturer_2,16193,3,5,8/23/2023
+199,Fire Alarm,1,109,9/2/2023,Manufacturer_3,31138,10,3,7/25/2023
+200,Elevator,4,109,10/29/2022,Manufacturer_2,12234,6,0,11/25/2022
+201,HVAC,4,109,2/28/2023,Manufacturer_5,6033,0,4,11/14/2022
+202,Fire Alarm,5,110,8/13/2023,Manufacturer_2,40137,7,4,6/17/2023
+203,Elevator,1,101,4/23/2020,Manufacturer_5,8297,0,1,1/28/2023
+204,Elevator,9,106,9/19/2019,Manufacturer_5,32377,6,0,5/16/2023
+205,Fire Alarm,7,110,4/1/2023,Manufacturer_1,48986,0,2,8/24/2023
+206,Plumbing System,10,107,10/24/2022,Manufacturer_3,22906,6,3,4/22/2023
+207,Fire Alarm,7,106,5/21/2022,Manufacturer_1,3344,7,1,6/3/2023
+208,Electrical Panel,2,110,8/13/2022,Manufacturer_4,28126,9,4,3/29/2023
+209,Electrical Panel,1,102,9/7/2021,Manufacturer_2,26097,1,5,2/6/2023
+210,HVAC,8,108,2/28/2023,Manufacturer_5,24212,6,0,11/30/2022
+211,HVAC,6,109,7/18/2022,Manufacturer_4,14056,4,4,2/15/2023
+212,Electrical Panel,1,108,2/3/2023,Manufacturer_2,1270,1,0,10/23/2022
+213,Elevator,1,106,8/14/2019,Manufacturer_1,46669,6,3,1/11/2023
+214,Elevator,2,101,3/26/2019,Manufacturer_3,37891,2,3,4/23/2023
+215,Electrical Panel,4,101,9/2/2020,Manufacturer_5,1846,6,5,2/24/2023
+216,Electrical Panel,1,107,9/9/2022,Manufacturer_2,19500,0,5,1/7/2023
+217,Plumbing System,9,102,2/2/2019,Manufacturer_1,30503,3,4,12/5/2022
+218,Elevator,6,106,1/29/2022,Manufacturer_1,33822,1,0,9/12/2023
+219,HVAC,7,105,2/10/2019,Manufacturer_3,44540,2,2,5/29/2023
+220,Plumbing System,4,103,8/23/2022,Manufacturer_5,8561,0,1,10/23/2022
+221,Fire Alarm,10,101,7/28/2020,Manufacturer_1,12874,10,5,7/7/2023
+222,Elevator,6,104,2/1/2021,Manufacturer_4,13098,10,2,4/30/2023
+223,Elevator,10,109,2/27/2021,Manufacturer_3,38561,10,5,6/16/2023
+224,Plumbing System,4,103,3/5/2021,Manufacturer_3,2385,10,1,4/6/2023
+225,Fire Alarm,3,106,11/6/2019,Manufacturer_5,9917,3,1,12/6/2022
+226,Elevator,3,102,11/29/2022,Manufacturer_5,21106,9,1,8/26/2023
+227,Fire Alarm,7,106,3/20/2019,Manufacturer_4,18617,4,4,11/24/2022
+228,Plumbing System,10,101,2/12/2021,Manufacturer_1,18035,1,1,9/5/2023
+229,HVAC,10,109,7/12/2023,Manufacturer_5,5258,4,2,8/6/2023
+230,Plumbing System,5,105,5/13/2020,Manufacturer_4,29616,3,4,7/22/2023
+231,Fire Alarm,3,103,3/26/2021,Manufacturer_4,18856,3,5,11/26/2022
+232,Fire Alarm,2,101,4/20/2023,Manufacturer_2,2605,3,2,4/14/2023
+233,Elevator,3,109,4/21/2020,Manufacturer_4,27181,7,0,1/26/2023
+234,Electrical Panel,8,110,10/8/2019,Manufacturer_3,42811,3,2,3/21/2023
+235,Plumbing System,1,108,11/16/2019,Manufacturer_3,15772,6,4,4/3/2023
+236,Electrical Panel,10,105,3/19/2019,Manufacturer_4,2653,4,4,3/7/2023
+237,Fire Alarm,10,109,8/26/2019,Manufacturer_5,31508,2,4,1/18/2023
+238,Electrical Panel,4,107,5/9/2023,Manufacturer_2,9169,6,2,12/22/2022
+239,HVAC,5,101,2/5/2022,Manufacturer_4,39958,1,2,7/12/2023
+240,Elevator,6,106,8/4/2023,Manufacturer_2,38489,0,3,4/15/2023
+241,HVAC,1,102,12/31/2020,Manufacturer_4,23187,6,5,10/24/2022
+242,Electrical Panel,9,101,3/23/2022,Manufacturer_1,42083,10,1,1/1/2023
+243,HVAC,5,109,1/29/2020,Manufacturer_2,47941,10,0,8/7/2023
+244,Electrical Panel,9,103,12/20/2019,Manufacturer_4,21697,1,5,7/26/2023
+245,Plumbing System,8,105,5/11/2023,Manufacturer_5,30178,4,3,12/27/2022
+246,Electrical Panel,3,109,9/19/2020,Manufacturer_5,45581,1,0,1/10/2023
+247,Plumbing System,3,110,10/10/2018,Manufacturer_4,23278,10,3,8/9/2023
+248,Fire Alarm,10,106,1/7/2020,Manufacturer_2,10886,4,0,5/30/2023
+249,Plumbing System,9,102,6/16/2019,Manufacturer_5,15760,5,1,6/28/2023
+250,HVAC,1,105,9/1/2019,Manufacturer_1,6764,2,0,9/24/2022
+251,Fire Alarm,6,105,1/11/2021,Manufacturer_4,44342,6,4,4/16/2023
+252,Fire Alarm,3,109,5/14/2023,Manufacturer_1,2734,6,1,4/27/2023
+253,HVAC,8,110,1/7/2021,Manufacturer_3,13384,8,5,6/8/2023
+254,Fire Alarm,7,108,1/1/2021,Manufacturer_4,26996,9,2,4/6/2023
+255,Electrical Panel,2,104,7/18/2021,Manufacturer_3,43775,8,0,12/1/2022
+256,HVAC,4,104,4/2/2023,Manufacturer_4,10062,1,0,6/20/2023
+257,Plumbing System,9,101,4/25/2020,Manufacturer_4,27249,10,4,8/14/2023
+258,Plumbing System,4,102,10/19/2020,Manufacturer_1,22653,1,5,11/23/2022
+259,Plumbing System,7,105,3/21/2019,Manufacturer_1,39701,4,0,5/4/2023
+260,Fire Alarm,5,103,10/13/2018,Manufacturer_4,13038,4,4,5/21/2023
+261,HVAC,3,109,8/4/2020,Manufacturer_2,49668,5,4,3/17/2023
+262,Electrical Panel,1,104,1/16/2021,Manufacturer_5,25228,5,4,4/14/2023
+263,Fire Alarm,4,109,12/15/2022,Manufacturer_3,37322,6,1,1/2/2023
+264,Electrical Panel,9,107,11/8/2020,Manufacturer_3,29431,2,3,10/2/2022
+265,Fire Alarm,2,102,10/4/2020,Manufacturer_5,45712,9,5,9/6/2023
+266,HVAC,1,107,8/1/2020,Manufacturer_3,6330,5,3,3/25/2023
+267,Fire Alarm,3,108,1/16/2020,Manufacturer_3,17047,10,5,6/25/2023
+268,Plumbing System,3,105,10/7/2019,Manufacturer_5,36727,4,2,9/29/2022
+269,HVAC,3,104,10/27/2019,Manufacturer_1,15627,10,1,1/23/2023
+270,Elevator,1,103,8/24/2022,Manufacturer_5,48899,2,1,9/3/2023
+271,Plumbing System,4,110,12/2/2021,Manufacturer_2,39387,0,1,5/27/2023
+272,Elevator,6,102,7/11/2019,Manufacturer_2,6145,2,5,9/26/2022
+273,Electrical Panel,4,110,6/28/2023,Manufacturer_5,13435,0,0,9/1/2023
+274,Plumbing System,5,106,4/28/2023,Manufacturer_5,37110,7,5,2/3/2023
+275,Electrical Panel,1,107,11/27/2022,Manufacturer_3,37550,7,2,10/20/2022
+276,Elevator,10,102,8/15/2019,Manufacturer_3,23104,9,4,12/7/2022
+277,Plumbing System,9,106,1/20/2021,Manufacturer_5,17690,6,5,5/27/2023
+278,Electrical Panel,10,105,8/12/2022,Manufacturer_3,29111,4,0,8/11/2023
+279,HVAC,2,109,8/30/2019,Manufacturer_3,28653,0,0,12/5/2022
+280,HVAC,4,109,10/24/2019,Manufacturer_2,21619,10,2,1/1/2023
+281,HVAC,1,107,6/25/2023,Manufacturer_2,24086,3,0,5/24/2023
+282,HVAC,9,108,2/26/2020,Manufacturer_1,31140,5,1,4/26/2023
+283,Plumbing System,2,106,2/5/2023,Manufacturer_1,3546,5,3,9/21/2022
+284,Plumbing System,6,107,10/27/2020,Manufacturer_3,13146,0,0,9/5/2023
+285,Elevator,7,106,6/1/2020,Manufacturer_3,38267,10,1,7/28/2023
+286,Electrical Panel,6,110,4/28/2019,Manufacturer_5,23991,3,1,9/30/2022
+287,HVAC,6,106,11/29/2019,Manufacturer_5,42595,10,1,3/26/2023
+288,Electrical Panel,2,109,9/27/2020,Manufacturer_4,21434,3,0,8/25/2023
+289,Electrical Panel,9,107,12/26/2022,Manufacturer_3,32139,5,2,6/4/2023
+290,Elevator,3,106,6/3/2023,Manufacturer_3,23033,2,4,2/2/2023
+291,Electrical Panel,5,108,8/2/2021,Manufacturer_4,32342,8,0,10/14/2022
+292,Fire Alarm,8,106,6/12/2019,Manufacturer_3,27099,2,3,3/8/2023
+293,Electrical Panel,8,104,10/5/2021,Manufacturer_5,25029,1,2,9/15/2022
+294,Electrical Panel,5,102,9/18/2021,Manufacturer_2,44183,0,3,5/26/2023
+295,HVAC,3,110,10/27/2019,Manufacturer_5,39825,1,0,2/22/2023
+296,Elevator,9,101,4/19/2022,Manufacturer_2,7400,9,4,10/25/2022
+297,Fire Alarm,5,105,9/9/2023,Manufacturer_2,29205,1,0,11/27/2022
+298,Plumbing System,9,103,11/24/2021,Manufacturer_5,7685,2,5,11/8/2022
+299,Electrical Panel,10,105,4/1/2022,Manufacturer_2,36839,2,1,9/1/2023
+300,Electrical Panel,10,102,7/23/2023,Manufacturer_3,34877,0,4,2/13/2023
+301,HVAC,7,104,7/6/2021,Manufacturer_4,41427,1,3,2/25/2023
+302,Fire Alarm,1,102,7/2/2023,Manufacturer_4,47043,1,1,9/5/2023
+303,HVAC,10,109,1/29/2021,Manufacturer_3,30022,8,5,5/17/2023
+304,Elevator,9,109,5/13/2019,Manufacturer_3,26191,1,3,11/8/2022
+305,Plumbing System,9,102,9/28/2020,Manufacturer_1,1117,9,4,3/18/2023
+306,Plumbing System,9,104,10/28/2022,Manufacturer_5,31831,4,1,9/26/2022
+307,Electrical Panel,10,109,8/16/2023,Manufacturer_4,18400,10,3,12/8/2022
+308,Elevator,10,105,10/4/2019,Manufacturer_3,28744,6,1,8/9/2023
+309,HVAC,1,104,1/4/2023,Manufacturer_4,45481,8,5,2/13/2023
+310,Electrical Panel,9,106,3/30/2023,Manufacturer_5,27683,3,3,11/30/2022
+311,HVAC,2,109,5/13/2019,Manufacturer_5,27683,5,3,4/6/2023
+312,HVAC,2,101,6/27/2022,Manufacturer_2,45586,9,1,10/1/2022
+313,Plumbing System,6,101,8/27/2022,Manufacturer_4,32529,0,1,7/30/2023
+314,Elevator,10,110,12/31/2022,Manufacturer_3,13036,10,5,2/11/2023
+315,Electrical Panel,3,105,1/20/2021,Manufacturer_1,2055,3,0,10/1/2022
+316,Plumbing System,5,103,4/17/2019,Manufacturer_2,43798,2,1,12/1/2022
+317,Fire Alarm,4,105,1/30/2021,Manufacturer_4,17214,2,1,3/28/2023
+318,Plumbing System,5,110,11/27/2019,Manufacturer_1,47435,3,1,7/26/2023
+319,Fire Alarm,3,107,9/24/2022,Manufacturer_1,886,0,0,6/5/2023
+320,HVAC,10,106,3/4/2023,Manufacturer_1,39320,2,2,9/28/2022
+321,Electrical Panel,9,103,5/10/2020,Manufacturer_2,9776,6,4,1/29/2023
+322,Plumbing System,8,102,6/8/2020,Manufacturer_2,48171,3,3,5/16/2023
+323,Fire Alarm,10,106,6/24/2021,Manufacturer_2,32376,2,3,9/29/2022
+324,Electrical Panel,6,110,1/2/2020,Manufacturer_1,8562,1,4,12/15/2022
+325,Plumbing System,8,107,8/27/2022,Manufacturer_3,47373,2,1,7/14/2023
+326,HVAC,7,106,11/10/2018,Manufacturer_3,30239,6,3,12/23/2022
+327,Electrical Panel,6,102,2/16/2020,Manufacturer_1,16733,6,1,12/10/2022
+328,Electrical Panel,1,106,3/6/2019,Manufacturer_4,20621,7,1,5/10/2023
+329,HVAC,1,110,4/6/2022,Manufacturer_1,16121,2,0,3/27/2023
+330,Plumbing System,10,109,8/30/2021,Manufacturer_1,6117,8,2,10/19/2022
+331,HVAC,5,110,7/4/2020,Manufacturer_2,13131,9,0,11/18/2022
+332,Elevator,4,103,3/22/2019,Manufacturer_5,36471,2,1,11/14/2022
+333,Plumbing System,10,105,7/22/2021,Manufacturer_3,1478,5,1,11/23/2022
+334,Fire Alarm,1,108,9/14/2019,Manufacturer_4,14314,9,1,9/20/2022
+335,Elevator,1,110,12/29/2020,Manufacturer_4,13336,5,2,1/10/2023
+336,Plumbing System,3,108,6/27/2022,Manufacturer_2,25539,8,0,11/14/2022
+337,Fire Alarm,7,101,7/8/2020,Manufacturer_1,7433,3,3,7/5/2023
+338,Electrical Panel,8,105,4/28/2019,Manufacturer_3,5791,5,1,7/28/2023
+339,HVAC,5,103,10/11/2019,Manufacturer_2,18310,8,0,10/5/2022
+340,Plumbing System,2,104,2/3/2019,Manufacturer_5,32146,4,4,12/14/2022
+341,HVAC,3,106,9/15/2022,Manufacturer_2,43501,0,4,4/17/2023
+342,Electrical Panel,5,107,10/22/2022,Manufacturer_1,23418,3,5,10/20/2022
+343,Plumbing System,2,108,11/20/2022,Manufacturer_2,36067,4,5,9/9/2023
+344,Plumbing System,3,101,1/8/2022,Manufacturer_3,21642,4,1,6/3/2023
+345,HVAC,9,102,4/7/2021,Manufacturer_5,33914,0,4,12/7/2022
+346,Electrical Panel,6,110,5/15/2023,Manufacturer_5,27926,8,5,10/30/2022
+347,HVAC,6,107,5/10/2019,Manufacturer_1,45574,6,2,1/20/2023
+348,HVAC,5,101,6/18/2023,Manufacturer_2,20621,5,5,10/28/2022
+349,HVAC,9,108,7/29/2020,Manufacturer_3,599,1,5,2/6/2023
+350,Electrical Panel,5,104,12/20/2019,Manufacturer_4,25983,5,5,8/27/2023
+351,Elevator,9,110,6/7/2021,Manufacturer_5,22432,5,4,6/15/2023
+352,Electrical Panel,3,109,3/10/2019,Manufacturer_2,42016,0,0,8/10/2023
+353,Fire Alarm,7,107,3/3/2022,Manufacturer_5,29436,10,5,10/4/2022
+354,Plumbing System,3,105,4/2/2019,Manufacturer_1,12465,10,5,1/5/2023
+355,Fire Alarm,5,108,1/12/2022,Manufacturer_4,20176,0,1,2/3/2023
+356,Elevator,4,101,10/24/2020,Manufacturer_3,28310,2,4,1/30/2023
+357,Elevator,3,105,6/19/2021,Manufacturer_3,21096,0,5,3/7/2023
+358,Fire Alarm,3,106,6/10/2023,Manufacturer_4,49118,7,4,8/25/2023
+359,Fire Alarm,2,101,7/4/2019,Manufacturer_5,27129,0,1,10/2/2022
+360,Plumbing System,10,109,1/18/2020,Manufacturer_5,21275,6,1,11/4/2022
+361,Fire Alarm,1,107,5/19/2019,Manufacturer_4,10659,5,3,2/28/2023
+362,Electrical Panel,3,104,5/30/2019,Manufacturer_3,5624,2,4,7/2/2023
+363,Electrical Panel,5,110,9/8/2021,Manufacturer_5,46996,9,4,2/3/2023
+364,Fire Alarm,10,106,8/24/2019,Manufacturer_1,4899,6,3,6/6/2023
+365,Plumbing System,7,102,2/29/2020,Manufacturer_3,28697,3,5,10/21/2022
+366,HVAC,2,109,1/2/2019,Manufacturer_3,21772,4,0,4/5/2023
+367,Fire Alarm,3,107,1/30/2023,Manufacturer_5,49929,8,2,3/1/2023
+368,Fire Alarm,4,105,5/7/2022,Manufacturer_4,46385,2,4,11/10/2022
+369,Plumbing System,1,103,10/13/2019,Manufacturer_2,37968,0,5,2/9/2023
+370,Elevator,8,104,1/1/2020,Manufacturer_5,3187,4,2,1/8/2023
+371,Plumbing System,8,103,3/13/2023,Manufacturer_5,796,7,4,7/14/2023
+372,Plumbing System,3,106,5/9/2021,Manufacturer_3,47458,3,1,11/24/2022
+373,Fire Alarm,7,102,10/29/2021,Manufacturer_2,18122,6,1,7/25/2023
+374,HVAC,9,105,11/18/2022,Manufacturer_5,6026,8,1,6/12/2023
+375,Elevator,2,110,2/26/2023,Manufacturer_2,34387,10,5,6/6/2023
+376,Electrical Panel,3,109,2/3/2023,Manufacturer_4,39780,1,2,10/23/2022
+377,Fire Alarm,2,109,8/13/2021,Manufacturer_5,18854,7,1,9/17/2022
+378,Elevator,5,109,1/19/2020,Manufacturer_5,44985,6,3,4/7/2023
+379,Fire Alarm,2,101,1/5/2023,Manufacturer_2,21104,5,2,1/4/2023
+380,Electrical Panel,6,106,4/29/2022,Manufacturer_4,473,0,5,8/17/2023
+381,Electrical Panel,5,104,8/4/2023,Manufacturer_2,21574,7,2,3/2/2023
+382,HVAC,6,101,12/8/2021,Manufacturer_4,30746,3,4,2/24/2023
+383,Electrical Panel,5,107,10/19/2019,Manufacturer_2,12854,1,4,9/15/2022
+384,Plumbing System,7,105,1/1/2021,Manufacturer_1,7767,4,0,8/16/2023
+385,Fire Alarm,7,107,1/3/2022,Manufacturer_3,48133,7,1,2/22/2023
+386,Fire Alarm,5,107,11/14/2021,Manufacturer_3,6859,4,1,12/26/2022
+387,Electrical Panel,10,105,9/16/2022,Manufacturer_3,15103,4,4,9/17/2022
+388,Fire Alarm,6,105,5/19/2022,Manufacturer_5,40658,3,1,11/17/2022
+389,Elevator,2,102,11/3/2021,Manufacturer_3,22088,0,3,8/12/2023
+390,Plumbing System,10,102,1/15/2021,Manufacturer_2,13767,3,3,4/11/2023
+391,Plumbing System,10,107,3/1/2022,Manufacturer_4,7702,10,4,1/12/2023
+392,Elevator,3,106,11/17/2020,Manufacturer_5,42491,2,0,9/25/2022
+393,Fire Alarm,6,102,8/12/2021,Manufacturer_1,27307,10,3,5/20/2023
+394,HVAC,3,101,11/25/2022,Manufacturer_3,30403,5,2,9/4/2023
+395,Electrical Panel,5,103,4/30/2020,Manufacturer_1,49935,4,5,5/25/2023
+396,Electrical Panel,9,106,1/10/2021,Manufacturer_1,37034,9,3,7/21/2023
+397,Elevator,6,109,7/15/2019,Manufacturer_5,40212,1,1,3/15/2023
+398,Plumbing System,6,102,2/21/2021,Manufacturer_4,29064,2,0,3/30/2023
+399,Electrical Panel,9,103,6/8/2021,Manufacturer_5,23661,5,1,4/5/2023
+400,Elevator,4,102,2/29/2020,Manufacturer_2,14653,5,2,7/30/2023
+401,Fire Alarm,8,110,8/13/2021,Manufacturer_4,17312,8,5,7/7/2023
+402,Elevator,1,109,4/30/2023,Manufacturer_1,10307,9,3,10/6/2022
+403,HVAC,6,104,4/18/2020,Manufacturer_5,34175,8,1,1/26/2023
+404,Elevator,9,109,6/18/2022,Manufacturer_1,47449,4,4,2/28/2023
+405,Elevator,5,102,4/23/2020,Manufacturer_2,19956,7,4,11/6/2022
+406,Electrical Panel,8,101,3/9/2019,Manufacturer_1,46092,4,2,3/24/2023
+407,Elevator,1,108,7/7/2021,Manufacturer_1,18456,1,2,2/15/2023
+408,HVAC,3,103,2/8/2021,Manufacturer_1,49496,6,4,10/6/2022
+409,Plumbing System,8,108,4/28/2023,Manufacturer_5,14856,3,0,10/23/2022
+410,Electrical Panel,1,103,8/27/2020,Manufacturer_5,21061,5,3,10/30/2022
+411,HVAC,8,108,7/10/2020,Manufacturer_5,14569,7,5,1/9/2023
+412,Fire Alarm,6,107,10/5/2019,Manufacturer_1,31747,4,5,2/16/2023
+413,Fire Alarm,7,108,9/6/2020,Manufacturer_3,27620,8,2,5/5/2023
+414,HVAC,2,104,11/12/2021,Manufacturer_2,33085,0,3,10/16/2022
+415,Fire Alarm,8,107,7/18/2022,Manufacturer_3,43502,8,0,9/10/2023
+416,HVAC,9,101,1/31/2020,Manufacturer_3,45925,5,2,6/1/2023
+417,Fire Alarm,3,110,9/4/2022,Manufacturer_5,43804,10,0,6/19/2023
+418,Elevator,3,106,8/22/2020,Manufacturer_5,33798,10,0,1/7/2023
+419,Plumbing System,2,102,4/3/2021,Manufacturer_1,7052,6,1,9/20/2022
+420,HVAC,6,109,8/27/2023,Manufacturer_5,775,4,4,2/19/2023
+421,Electrical Panel,5,105,10/18/2021,Manufacturer_5,18749,9,5,6/7/2023
+422,HVAC,5,107,10/19/2020,Manufacturer_4,35909,1,2,1/24/2023
+423,Electrical Panel,5,104,4/15/2019,Manufacturer_2,25207,4,0,6/8/2023
+424,HVAC,1,106,1/12/2020,Manufacturer_1,31466,1,2,7/12/2023
+425,Electrical Panel,8,102,7/21/2020,Manufacturer_1,24013,5,2,6/15/2023
+426,Plumbing System,5,106,4/12/2022,Manufacturer_2,702,4,3,2/6/2023
+427,HVAC,7,110,7/22/2021,Manufacturer_5,9702,2,4,2/7/2023
+428,HVAC,5,106,11/4/2019,Manufacturer_5,30740,8,5,12/31/2022
+429,Electrical Panel,3,106,8/30/2023,Manufacturer_5,47222,0,1,4/29/2023
+430,Elevator,1,103,4/1/2023,Manufacturer_2,25229,2,4,8/27/2023
+431,Plumbing System,1,101,12/26/2021,Manufacturer_4,46725,9,2,3/7/2023
+432,Electrical Panel,8,105,3/15/2019,Manufacturer_1,34275,5,1,7/7/2023
+433,HVAC,1,102,6/13/2023,Manufacturer_3,8194,7,2,10/11/2022
+434,Elevator,4,110,6/26/2023,Manufacturer_5,29385,1,0,11/16/2022
+435,Plumbing System,1,106,10/4/2021,Manufacturer_3,20924,4,5,12/10/2022
+436,Elevator,5,101,6/24/2019,Manufacturer_2,22612,8,1,6/27/2023
+437,Fire Alarm,9,110,3/31/2021,Manufacturer_4,27288,1,2,2/6/2023
+438,Elevator,1,107,9/3/2019,Manufacturer_2,19958,5,2,9/27/2022
+439,Plumbing System,8,102,7/29/2022,Manufacturer_3,34341,0,0,1/13/2023
+440,Electrical Panel,7,110,12/19/2019,Manufacturer_1,43015,2,3,7/31/2023
+441,HVAC,5,109,7/10/2019,Manufacturer_1,19712,3,4,3/28/2023
+442,Plumbing System,4,105,3/14/2019,Manufacturer_1,38063,8,5,1/4/2023
+443,Electrical Panel,10,104,9/16/2020,Manufacturer_3,29151,10,5,11/14/2022
+444,Plumbing System,9,102,9/10/2021,Manufacturer_1,19461,10,2,9/2/2023
+445,Electrical Panel,9,110,2/13/2020,Manufacturer_5,40217,7,0,11/19/2022
+446,Elevator,10,104,11/18/2021,Manufacturer_2,8023,2,3,5/13/2023
+447,Fire Alarm,2,103,5/17/2021,Manufacturer_5,4103,9,0,10/6/2022
+448,HVAC,7,108,3/7/2023,Manufacturer_4,20474,4,5,11/20/2022
+449,HVAC,10,102,11/18/2019,Manufacturer_5,39067,6,3,4/28/2023
+450,HVAC,4,103,8/18/2021,Manufacturer_4,32999,2,3,7/1/2023
+451,Plumbing System,5,110,10/24/2022,Manufacturer_5,30974,2,5,1/29/2023
+452,Fire Alarm,2,102,6/1/2021,Manufacturer_5,48636,10,0,1/1/2023
+453,Plumbing System,6,105,1/16/2019,Manufacturer_5,44669,5,1,5/4/2023
+454,Elevator,3,102,2/4/2019,Manufacturer_3,14997,3,0,9/22/2022
+455,HVAC,2,106,8/17/2020,Manufacturer_5,44265,7,2,7/31/2023
+456,Fire Alarm,4,110,11/23/2021,Manufacturer_3,39133,8,5,8/18/2023
+457,Plumbing System,5,108,4/19/2020,Manufacturer_2,39040,6,2,5/11/2023
+458,Elevator,8,104,10/26/2020,Manufacturer_5,47000,7,1,12/25/2022
+459,Elevator,2,108,11/30/2019,Manufacturer_3,35387,9,5,9/24/2022
+460,HVAC,8,102,3/13/2020,Manufacturer_5,33604,7,2,3/22/2023
+461,Plumbing System,5,107,4/5/2021,Manufacturer_5,14964,4,4,9/10/2023
+462,Electrical Panel,6,108,8/21/2020,Manufacturer_1,44916,10,3,10/25/2022
+463,HVAC,2,103,8/29/2023,Manufacturer_2,44271,2,5,9/13/2022
+464,Plumbing System,10,102,11/1/2020,Manufacturer_4,42381,3,3,1/6/2023
+465,Elevator,9,104,7/19/2019,Manufacturer_3,27885,4,2,6/2/2023
+466,HVAC,7,107,9/20/2022,Manufacturer_5,21413,4,1,1/13/2023
+467,HVAC,7,110,10/21/2022,Manufacturer_4,41569,1,3,11/28/2022
+468,Elevator,4,102,10/7/2022,Manufacturer_1,22446,0,2,8/1/2023
+469,Elevator,3,101,6/17/2021,Manufacturer_5,44950,1,4,3/17/2023
+470,Elevator,3,107,3/6/2020,Manufacturer_3,22178,1,3,1/1/2023
+471,Elevator,4,106,4/6/2023,Manufacturer_4,128,6,5,3/25/2023
+472,Fire Alarm,9,103,1/31/2022,Manufacturer_4,46332,9,2,8/24/2023
+473,Fire Alarm,6,108,10/30/2019,Manufacturer_4,30671,7,2,1/11/2023
+474,HVAC,6,109,10/29/2020,Manufacturer_5,1835,10,1,4/9/2023
+475,Electrical Panel,7,109,1/23/2022,Manufacturer_3,23347,2,1,12/28/2022
+476,Fire Alarm,2,108,7/18/2023,Manufacturer_2,40411,0,5,5/17/2023
+477,Electrical Panel,1,107,11/10/2021,Manufacturer_1,46293,6,0,1/10/2023
+478,HVAC,2,107,2/7/2021,Manufacturer_5,12718,9,3,12/10/2022
+479,Plumbing System,1,104,12/11/2021,Manufacturer_2,9775,10,4,10/3/2022
+480,Electrical Panel,4,108,7/26/2022,Manufacturer_1,28609,6,4,12/8/2022
+481,HVAC,9,103,4/18/2023,Manufacturer_5,24983,3,2,2/9/2023
+482,Elevator,3,109,8/6/2022,Manufacturer_4,19502,10,0,12/3/2022
+483,Fire Alarm,7,104,3/14/2021,Manufacturer_4,10860,1,4,10/23/2022
+484,Electrical Panel,7,104,6/9/2021,Manufacturer_1,11993,4,2,8/8/2023
+485,Elevator,4,101,4/24/2019,Manufacturer_5,27703,9,5,9/7/2023
+486,Elevator,5,107,9/9/2022,Manufacturer_5,7386,5,0,5/24/2023
+487,Fire Alarm,10,108,10/12/2022,Manufacturer_4,41096,2,4,12/26/2022
+488,Plumbing System,5,110,10/9/2022,Manufacturer_4,19898,7,2,11/11/2022
+489,Plumbing System,9,110,9/29/2019,Manufacturer_1,39262,7,2,3/14/2023
+490,HVAC,1,109,1/30/2021,Manufacturer_5,41261,1,5,4/2/2023
+491,Fire Alarm,10,106,9/25/2020,Manufacturer_5,44125,6,0,8/8/2023
+492,Electrical Panel,6,107,5/22/2019,Manufacturer_4,10116,9,5,5/9/2023
+493,Electrical Panel,4,106,9/10/2021,Manufacturer_2,47037,3,1,12/20/2022
+494,Electrical Panel,5,101,11/13/2019,Manufacturer_4,41609,7,0,11/3/2022
+495,Plumbing System,10,107,4/21/2023,Manufacturer_1,19010,5,3,11/25/2022
+496,Electrical Panel,4,107,9/17/2019,Manufacturer_3,14066,10,4,7/12/2023
+497,Plumbing System,6,101,8/17/2023,Manufacturer_3,25995,8,4,7/17/2023
+498,Plumbing System,4,105,9/18/2019,Manufacturer_1,30130,8,1,1/20/2023
+499,Elevator,3,110,8/30/2019,Manufacturer_3,23023,3,0,2/28/2023
+500,Fire Alarm,2,110,6/9/2020,Manufacturer_1,24933,3,4,4/25/2023
