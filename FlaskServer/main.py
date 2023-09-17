@@ -14,11 +14,13 @@ client = MongoClient(uri,
 db = client['CBREData']
 collection = db['CBREData']
 
+#CODE THAT RUNS JUST ONCE, LIKE API AUTHENTICATION GOES HERE
+
 app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-# ...
+
 @app.route('/asset', methods=['GET'])
 @cross_origin()
 def search():
@@ -27,4 +29,14 @@ def search():
 
     result = collection.find_one(filter={"Asset ID": int(id)})
     result['_id'] = ""
+    return result
+
+@app.route('/gpt', methods=['GET'])
+@cross_origin()
+def search():
+    args = request.args
+    prompt = args.get("prompt")
+    #CODE HERE FOR RESULT
+    
+    result = {}
     return result
