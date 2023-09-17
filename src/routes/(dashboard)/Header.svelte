@@ -1,9 +1,19 @@
-<script>
+<script lang="ts">
+	import { onMount } from 'svelte';
+
+	let username: string;
+
+	onMount(async () => {
+		const url = new URL('/api/whoami', location.origin);
+		const res = await fetch(url);
+		const json = await res.json();
+		username = json.username;
+	});
 </script>
 
 <div id="header">
 	<div id="user">
-		John Doe
+		{username}
 		<div id="user-profile" />
 	</div>
 </div>
