@@ -190,6 +190,13 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
+@app.route('/next_asset', methods=['GET'])
+@cross_origin()
+def next_asset():
+    doc_count = collection.count_documents({})
+    result = {"response": doc_count}
+    return result
+
 @app.route('/asset', methods=['GET'])
 @cross_origin()
 def search_asset():
@@ -200,7 +207,14 @@ def search_asset():
     result['_id'] = str(result['_id'])  # Convert ObjectId to string
     return jsonify(result)
 
-@app.route('/gpt', methods=['GET'])
+@app.route('/post_asset', methods=['POST'])
+@cross_origin()
+def post_asset():
+    data = json.loads(str(request.data)[2:-1])
+    collection.replace_one({"Asset ID": int(data["Asset ID"])}, data, True)
+    return {"status": "success"}
+
+@app.route('/gpt', methods=['GET']) 
 @cross_origin()
 def search_gpt():
     args = request.args
