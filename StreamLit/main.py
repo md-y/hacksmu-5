@@ -55,17 +55,6 @@ if st.checkbox('Show 3D Scatter Plot'):
     st.plotly_chart(fig_3d_scatter)
 
 
-if st.checkbox('Show Sunburst Visualization for Asset Type → Manufacturer → Criticality Level hierarchy weighted by Cost'):
-    fig_sunburst = px.sunburst(df, 
-                           path=['Asset Type', 'Manufacturer', 'Criticality Level'], 
-                           values='Cost',
-                           title="Distribution of Assets by Type, Manufacturer, and Criticality Level weighted by Cost",
-                           color='Asset Type',
-                           hover_data=['Operational Time (hrs)', 'Energy Efficiency'],
-                           color_discrete_sequence=px.colors.qualitative.Set1)
-
-    fig_sunburst.show()
-
 corr = df.corr()
 
 if st.checkbox('Show Correlation Heatmap'):
