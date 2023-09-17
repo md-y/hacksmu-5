@@ -1,11 +1,18 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import ArPanel from './ArPanel.svelte';
+	import { currentAsset } from './panelstore';
+	import { fly } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 
 	// https://github.com/sectorxusa/svelte-aframe-arjs/blob/master/src/routes/index.svelte
+
+	const libraryCount = 4;
+
 	let loadCount = 0;
 	let mounted = false;
 	let ready = false;
-	$: ready = loadCount === 3 && mounted;
+	$: ready = loadCount === libraryCount && mounted;
 
 	function onLibraryLoad() {
 		loadCount++;
@@ -19,6 +26,10 @@
 </script>
 
 <svelte:head>
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto:regular&display=swap"
+		rel="stylesheet"
+	/>
 	{#if mounted}
 		<script src="https://aframe.io/releases/1.3.0/aframe.min.js" on:load={onLibraryLoad}></script>
 		{#if loadCount >= 1}
@@ -32,6 +43,7 @@
 				src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"
 				on:load={onLibraryLoad}
 			></script>
+			<script type="text/javascript" src="/ar_addon.js" on:load={onLibraryLoad}></script>
 		{/if}
 	{/if}
 </svelte:head>
@@ -42,14 +54,138 @@
 		arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
 		renderer="antialias: true; alpha: true"
 	>
-		<a-camera gps-new-camera="gpsMinDistance: 5" />
-		<a-entity
-			material="color: red"
-			geometry="primitive: box"
-			gps-new-entity-place="latitude: 32.8434832; longitude: -96.7833988"
-			scale="10 10 10"
+		<a-camera
+			id="camera"
+			gps-new-camera="gpsMinDistance: 5;"
+			arjs-device-orientation-controls="smoothingFactor: 0.1"
+			cursor="rayOrigin: mouse"
+		>
+			<a-entity
+				cursor="fuse: true; fuseTimeout: 1"
+				position="0 0 -1"
+				geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+				material="color: white; shader: flat"
+			/>
+		</a-camera>
+		<ArPanel
+			asset={{
+				id: 'test-id',
+				name: 'Fire Alarm',
+				lat: 32.8434832,
+				long: -96.7833988
+			}}
+		/>
+		<ArPanel
+			asset={{
+				id: 'test-id',
+				name: 'Electrical Box',
+				lat: 32.8436832,
+				long: -96.7833988
+			}}
+		/>
+		<ArPanel
+			asset={{
+				id: 'test-id',
+				name: 'Flag',
+				lat: 32.8434832,
+				long: -96.7834988
+			}}
 		/>
 	</a-scene>
+	<div id="ar-overlay">
+		<div class="header">
+			<a href="/">
+				<svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512">
+					<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+					<path
+						fill="white"
+						d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+					/>
+				</svg>
+			</a>
+		</div>
+		{#if $currentAsset !== null}
+			<div
+				class="footer"
+				transition:fly={{
+					duration: 300,
+					y: 500
+				}}
+			>
+				<div class="close">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="2em"
+						viewBox="0 0 384 512"
+						on:click={() => currentAsset.set(null)}
+						on:keyup={() => currentAsset.set(null)}
+						role="button"
+						tabindex="0"
+					>
+						<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+						<path
+							fill="white"
+							d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+						/>
+					</svg>
+				</div>
+				<div class="body">
+					<h1>{$currentAsset.name}</h1>
+					<h2>{$currentAsset.id}</h2>
+					<span class="spacer" />
+				</div>
+			</div>
+		{/if}
+	</div>
 {:else}
-	<h1>Loading libraries {loadCount}/3...</h1>
+	<img
+		src="https://upload.wikimedia.org/wikipedia/commons/9/92/Loading_icon_cropped.gif"
+		alt="loading icon"
+	/>
 {/if}
+
+<style lang="scss">
+	#ar-overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		width: 100vw;
+		height: 100vh;
+
+		color: white;
+
+		font-family: 'Roboto', sans-serif;
+
+		.header {
+			padding: 1em;
+		}
+
+		.footer {
+			position: absolute;
+			top: 60vh;
+			left: 0;
+			width: 100%;
+
+			padding: 1em;
+			background-color: rgba(0, 0, 0, 0.5);
+
+			.close {
+				position: absolute;
+				right: 3em;
+				top: 1em;
+			}
+
+			.body {
+				overflow-y: auto;
+				height: 40vh;
+			}
+
+			.spacer {
+				display: block;
+				width: 100%;
+				height: 10vh;
+			}
+		}
+	}
+</style>
