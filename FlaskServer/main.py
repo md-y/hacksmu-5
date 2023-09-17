@@ -211,7 +211,15 @@ def search_asset():
 @cross_origin()
 def post_asset():
     data = json.loads(str(request.data)[2:-1])
-    collection.replace_one({"Asset ID": int(data["Asset ID"])}, data, True)
+    id = data["Asset ID"]
+    import requests
+
+    URL = "https://us-central1-sendsms-399304.cloudfunctions.net/function-2"
+
+    PARAMS = {'message':f'Anomoly Detected on Asset {id}!'}
+    
+    # sending get request and saving the response as response object
+    requests.get(url = URL, params = PARAMS)
     return {"status": "success"}
 
 @app.route('/gpt', methods=['GET']) 
