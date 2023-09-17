@@ -8,10 +8,10 @@
 		<a href="/">Dashboard</a>
 	</div>
 	<div class="sidebarItem">
-		<a href="account">Account</a>
+		<a href="/account">Account</a>
 	</div>
 	<div class="sidebarItem">
-		<a href="search">Search Assets</a>
+		<a href="/search">Search Assets</a>
 	</div>
 	<div class="sidebarItem">
 		<a href="/ar" target="_blank"
