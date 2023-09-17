@@ -123,7 +123,7 @@
 					</svg>
 				</div>
 				<div class="body">
-					<h1>{$currentAsset['Asset Type']}</h1>
+					<a href="/search?query={$currentAsset['Asset ID']}">{$currentAsset['Asset Type']}</a>
 					<h2><b>ID</b> {$currentAsset['Asset ID']}</h2>
 					<h2><b>Install Date</b> {$currentAsset['Installation Date']}</h2>
 					<h2><b>Operation Time</b> {$currentAsset['Operational Time (hrs)']}hrs</h2>
@@ -160,12 +160,18 @@
 
 		font-family: 'Roboto', sans-serif;
 
-		b {
+		b,
+		a {
 			font-weight: 900;
 		}
 
 		h2 {
 			font-weight: 400;
+		}
+
+		a {
+			font-size: 1.75em;
+			color: white;
 		}
 
 		.header {
