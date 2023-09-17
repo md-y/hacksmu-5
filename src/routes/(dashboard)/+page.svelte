@@ -1,22 +1,19 @@
 <script>
-    let selected_asset = 0;
-    let assetInfo = "";
 	let prompt = "";
-    async function getAsset(){
-        //fetch assetInfo
-        const response = await fetch(`http://127.0.0.1:5000/asset?id=${selected_asset}`);
-        assetInfo = await response.json();
-        console.log(assetInfo);
-    }
+	let gptResponse = "Ask me a question about the data";
 
-	function getAssistance(){
+	async function getAssistance(){
 		//make request to backend for the promt data
+		gptResponse = "Thinking..."
+		const response = await fetch(`http://127.0.0.1:5000/gpt?prompt=${prompt}`);
+        const res = await response.json();
+		gptResponse = res.response;
 	}
 </script>
 
 <div id="chatbot">
 	<div style="width:99%">
-		<p>Ask me a question about the data!</p>
+		<p>{gptResponse}</p>
 	</div>
 	<div style="width:99%">
 		<form on:submit={(e) => getAssistance()}>
@@ -30,7 +27,7 @@
 <style>
     iframe{
         width:99%;
-        height: 90%;
+        height: 65%;
 		border: none;
     }
 	#chatbot{
