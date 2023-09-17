@@ -223,9 +223,7 @@ def check_anomaly():
 @cross_origin()
 def service_regression():
     asset_id = request.args.get("id")    
-    print("22222222222222222222222222")
     predicted_date = predict_service_date(asset_id, model, json_data)
-    print("333333333333333333")
     result = {"response": predicted_date}
     return jsonify(result)
 
