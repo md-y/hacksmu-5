@@ -14,6 +14,9 @@
 		<a href="/search">Search Assets</a>
 	</div>
 	<div class="sidebarItem">
+		<a href="/insight">Asset Insights</a>
+	</div>
+	<div class="sidebarItem">
 		<a href="/add">Create/Edit Asset</a>
 	</div>
 	<div class="sidebarItem">

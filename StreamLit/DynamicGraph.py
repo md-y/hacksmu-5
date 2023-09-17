@@ -4,9 +4,9 @@ import numpy as np
 import json
 
 # Load data
-@st.cache
+@st.cache_data
 def load_data():
-    with open("/Users/jayeshpaluru/Downloads/HackSMU/hacksmu-5/Dataset Creation/dataset.json", "r") as file:
+    with open("D:\Projects\hacksmu-5\Dataset Creation\dataset.json", "r") as file:
         data = json.load(file)
     return data
 
