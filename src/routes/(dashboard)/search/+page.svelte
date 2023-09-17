@@ -49,12 +49,13 @@
 		anomolyDetected = undefined;
 		serviceDateCalculated = undefined;
 
-		//check for anamoly
-		let anamoly: any = await fetch(`http://127.0.0.1:5000/anamoly?id=${asset["Asset ID"]}`);
-        anamoly = await anamoly.json();
-		anomolyDetected = anamoly.response;
+		//check for anomaly
+		let anomaly: any = await fetch(`http://127.0.0.1:5000/anomaly?id=${asset["Asset ID"]}`);
+        anomaly = await anomaly.json();
+		anomolyDetected = anomaly.response;
+
 		//check for next service date
-		let serviced: any = await fetch(`http://127.0.0.1:5000/gpt?serviceRegression=${asset["Asset ID"]}`);
+		let serviced: any = await fetch(`http://127.0.0.1:5000/serviceRegression?id=${asset["Asset ID"]}`);
         serviced = await serviced.json();
 		serviceDateCalculated = serviced.response;
 	}

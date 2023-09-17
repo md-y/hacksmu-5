@@ -36,7 +36,7 @@ collection = db['CBREData']
 openai.api_key = api_key
 
 def extract_features_with_id(asset):
-    asset_id = str(asset['Asset ID'])
+    asset_id = int(asset['Asset ID'])
     
     # Extract Operational Time, handle if it's not an integer
     try:
@@ -59,7 +59,7 @@ def extract_features_with_id(asset):
     return features
 
 # Create a matrix of features including Asset ID
-feature_matrix_with_id = [extract_features_with_id(asset) for asset in data_json]
+feature_matrix_with_id = [extract_features_with_id(asset) for asset in json_data]
 df_with_id = pd.DataFrame(feature_matrix_with_id)
 df_with_id.set_index("Asset ID", inplace=True)
 
@@ -131,7 +131,7 @@ def train_service_regressor(data):
     return model
 
 def predict_service_date(asset_id, model, data):
-    asset = next((item for item in data if item['Asset ID'] == asset_id), None)
+    asset = next((item for item in data if int(item['Asset ID']) == int(asset_id)), None)
     if asset is None:
         return f"No asset found with Asset ID: {asset_id}"
     
@@ -184,6 +184,8 @@ def chat_with_gpt3_retaining_knowledge_and_history(user_query, conversation_hist
     
     return response_text, conversation_history
 
+model = train_service_regressor(json_data)
+
 app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
@@ -220,8 +222,10 @@ def check_anomaly():
 @app.route('/serviceRegression', methods=['GET'])
 @cross_origin()
 def service_regression():
-    asset_id = request.args.get("id")
-    predicted_date = predict_service_date(asset_id, model, data_json)
+    asset_id = request.args.get("id")    
+    print("22222222222222222222222222")
+    predicted_date = predict_service_date(asset_id, model, json_data)
+    print("333333333333333333")
     result = {"response": predicted_date}
     return jsonify(result)
 
