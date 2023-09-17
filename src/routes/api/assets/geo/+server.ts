@@ -19,13 +19,14 @@ export const GET: RequestHandler = async (event) => {
 		await collection.createIndex({ location: '2dsphere' });
 	}
 
-	const data = await collection.findOne({
+	const cursor = await collection.find({
 		location: {
 			$near: {
 				$geometry: { type: 'Point', coordinates: [parseFloat(long), parseFloat(lat)] },
-				$maxDistance: 400
+				$maxDistance: 1000
 			}
 		}
 	});
+	const data = await cursor.toArray();
 	return json(data ?? {});
 };

@@ -3,15 +3,17 @@
 	import ArPanel from './ArPanel.svelte';
 	import { currentAsset } from './panelstore';
 	import { fly } from 'svelte/transition';
+	import type { Asset } from '../../../types';
 
 	// https://github.com/sectorxusa/svelte-aframe-arjs/blob/master/src/routes/index.svelte
 
 	const libraryCount = 4;
 
 	let loadCount = 0;
+	let assets: Asset[] | null = null;
 	let mounted = false;
 	let ready = false;
-	$: ready = loadCount === libraryCount && mounted;
+	$: ready = loadCount === libraryCount && mounted && assets != null;
 
 	function onLibraryLoad() {
 		loadCount++;
@@ -21,12 +23,22 @@
 	onMount(() => {
 		loadCount = 0;
 		mounted = true;
+
+		navigator.geolocation.getCurrentPosition(async (position) => {
+			const url = new URL('/api/assets/geo', location.origin);
+			url.searchParams.set('lat', position.coords.latitude.toString());
+			url.searchParams.set('long', position.coords.longitude.toString());
+			console.log(url);
+			const req = await fetch(url);
+			assets = (await req.json()) as Asset[];
+			console.log('Loaded', assets.length, 'assets');
+		});
 	});
 </script>
 
 <svelte:head>
 	<link
-		href="https://fonts.googleapis.com/css?family=Roboto:regular&display=swap"
+		href="https://fonts.googleapis.com/css?family=Roboto:regular,black&display=swap"
 		rel="stylesheet"
 	/>
 	{#if mounted}
@@ -66,30 +78,11 @@
 				material="color: white; shader: flat"
 			/>
 		</a-camera>
-		<ArPanel
-			asset={{
-				id: 'test-id',
-				name: 'Fire Alarm',
-				lat: 32.8434832,
-				long: -96.7833988
-			}}
-		/>
-		<ArPanel
-			asset={{
-				id: 'test-id',
-				name: 'Electrical Box',
-				lat: 32.8436832,
-				long: -96.7833988
-			}}
-		/>
-		<ArPanel
-			asset={{
-				id: 'test-id',
-				name: 'Flag',
-				lat: 32.8434832,
-				long: -96.7834988
-			}}
-		/>
+		{#if assets !== null}
+			{#each assets as asset}
+				<ArPanel {asset} />
+			{/each}
+		{/if}
 	</a-scene>
 	<div id="ar-overlay">
 		<div class="header">
@@ -129,8 +122,18 @@
 					</svg>
 				</div>
 				<div class="body">
-					<h1>{$currentAsset.name}</h1>
-					<h2>{$currentAsset.id}</h2>
+					<h1>{$currentAsset['Asset Type']}</h1>
+					<h2><b>ID</b> {$currentAsset['Asset ID']}</h2>
+					<h2><b>Install Date</b> {$currentAsset['Installation Date']}</h2>
+					<h2><b>Operation Time</b> {$currentAsset['Operational Time (hrs)']}hrs</h2>
+					<h2><b>Criticality Level</b> {$currentAsset['Criticality Level']}/10</h2>
+					<h2><b>Time Between Service</b> {$currentAsset['Time Between Services']}hrs</h2>
+					<h2><b>Cost</b> ${$currentAsset['Cost']}</h2>
+					<h2><b>Manufacturer</b> {$currentAsset['Manufacturer']}</h2>
+					<h2><b>Floor</b> {$currentAsset['Floor']}</h2>
+					<h2><b>Room</b> {$currentAsset['Room']}</h2>
+					<h2><b>Energy Efficiency</b> {$currentAsset['Energy Efficiency']}</h2>
+					<h2><b>Weight</b> {$currentAsset['Weight']}</h2>
 					<span class="spacer" />
 				</div>
 			</div>
@@ -155,6 +158,14 @@
 		color: white;
 
 		font-family: 'Roboto', sans-serif;
+
+		b {
+			font-weight: 900;
+		}
+
+		h2 {
+			font-weight: 400;
+		}
 
 		.header {
 			padding: 1em;
