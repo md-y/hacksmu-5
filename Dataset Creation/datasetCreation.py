@@ -107,7 +107,7 @@ asset_names = [
     {
         "name": "Fire Alarm",
         "criticality_level" : 8,
-        "time_between_service": 365 * 6,
+        "time_between_service": 365 * 12,
         "cost": 1000,
         "energy_efficiency": 9,
         "weight": 5,
@@ -117,7 +117,7 @@ asset_names = [
     {
         "name": "HVAC",
         "criticality_level" : 3,
-        "time_between_service": 365 * 6,
+        "time_between_service": 365 * 12,
         "cost": 500000,
         "energy_efficiency": 2,
         "weight": 2000,
@@ -127,7 +127,7 @@ asset_names = [
     {
         "name": "Electrical Panel",
         "criticality_level" : 4,
-        "time_between_service": 365 * 2,
+        "time_between_service": 365 * 6,
         "cost": 3000,
         "energy_efficiency": 5,
         "weight": 75,
@@ -255,8 +255,10 @@ for i in range(N):
         "Height From Floor": {
             "$numberDouble": assetInfo["height_from_floor"]
         },
-        "Latitude": "",
-        "Longitude": "",
+        "location" : {
+            "type": "Point",
+            "coordinates": ["",""]
+        }
     }
 
     assets.append(asset)
