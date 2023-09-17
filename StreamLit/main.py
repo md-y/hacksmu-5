@@ -28,12 +28,6 @@ df
 # App title
 st.title('MongoDB Data Visualization')
 
-
-# 1. Distribution of Asset Types
-if st.checkbox('Show Distribution of Asset Types'):
-    fig1 = px.bar(df['Asset Type'].value_counts().reset_index(), x='index', y='Asset Type', labels={'index': 'Asset Type', 'Asset Type': 'Count'}, title="Distribution of Asset Types")
-    st.plotly_chart(fig1)
-
 # 4. Metrics Overview
 if st.checkbox('Show Distribution of Cost'):
     fig4 = px.box(df, x='Cost', title="Distribution of Cost")
@@ -54,16 +48,6 @@ if st.checkbox('Show 3D Scatter Plot'):
     # Display the visualization in Streamlit
     st.plotly_chart(fig_3d_scatter)
 
-
-corr = df.corr()
-
-if st.checkbox('Show Correlation Heatmap'):
-    fig_heatmap = sns.heatmap(corr, 
-                          xticklabels=corr.columns.values,
-                          yticklabels=corr.columns.values,
-                          annot=True,
-                          cmap='Blues')
-    st.pyplot(fig_heatmap.figure)
 
 
 if st.checkbox('Show Scatter Plot of Cost vs Energy Efficiency'):
