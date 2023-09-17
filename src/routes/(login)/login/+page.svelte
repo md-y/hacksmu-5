@@ -1,6 +1,6 @@
 <div>
 	<form method="POST">
-		<h1>Asset Management System</h1>
+		<h1>Facilitrack</h1>
 		<input placeholder="Username" name="username" type="username" required />
 		<input placeholder="Password" name="password" type="password" required />
 		<button type="submit">Sign In</button>

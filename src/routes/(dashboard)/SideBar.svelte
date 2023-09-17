@@ -2,7 +2,7 @@
 </script>
 
 <div id="sidebar">
-	<h1>Easy Asset Manager📦</h1>
+	<h1>Facilitrack📦</h1>
 	<!-- Links here -->
 	<div class="sidebarItem">
 		<a href="/">Dashboard</a>
