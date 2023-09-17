@@ -254,7 +254,9 @@ for i in range(N):
         },
         "Height From Floor": {
             "$numberDouble": assetInfo["height_from_floor"]
-        }
+        },
+        "Latitude": "",
+        "Longitude": "",
     }
 
     assets.append(asset)
