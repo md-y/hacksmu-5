@@ -5,9 +5,10 @@ from pymongo.server_api import ServerApi
 import openai
 import pandas as pd
 import json
+from apikey import api_key
 
 # Load the dataset from the JSON file for chatbot
-with open("/Users/jayeshpaluru/Downloads/HackSMU/Dataset Creation/dataset.json", "r") as file:
+with open("../Dataset Creation/dataset.json", "r") as file:
     json_data = json.load(file)
 data_json = pd.DataFrame(json_data)
 
@@ -27,11 +28,29 @@ db = client['CBREData']
 collection = db['CBREData']
 
 # Set up OpenAI API key
-openai.api_key = 'OPENAI_API_KEY'
+openai.api_key = api_key
 
 def detailed_summarize_dataset_json():
     """Generate a comprehensive summary of the dataset for the chatbot's context."""
-    # ... (same as your provided function)
+    total_assets = len(data_json)
+    asset_type_counts = data_json['Asset Type'].value_counts().to_dict()
+    asset_type_summary = ', '.join([f"{k} ({v})" for k, v in asset_type_counts.items()])
+    manufacturer_counts = data_json['Manufacturer'].value_counts().to_dict()
+    manufacturer_summary = ', '.join([f"{k} ({v})" for k, v in manufacturer_counts.items()])
+    unique_floors = data_json['Floor'].nunique()
+    unique_rooms = data_json['Room'].nunique()
+    total_work_orders = data_json['Work Orders'].apply(len).sum()
+    total_repairs = data_json['Service Reports'].apply(len).sum()
+    avg_operational_time = data_json['Operational Time (hrs)'].mean() / 24  # Convert hours to days
+    summary = f"""
+    The building contains a total of {total_assets} assets. 
+    The assets are distributed among types as: {asset_type_summary}.
+    They are manufactured by: {manufacturer_summary}.
+    These assets are spread across {unique_floors} unique floors and {unique_rooms} unique rooms.
+    The total work orders and repairs for these assets amount to {total_work_orders} and {total_repairs} respectively.
+    The average operational time of the assets is approximately {avg_operational_time:.2f} days.
+    """
+    return summary
 
 def chat_with_gpt3_retaining_knowledge_and_history(user_query, conversation_history):
     """
@@ -76,6 +95,26 @@ def search_gpt():
     conversation_history = []
     response, _ = chat_with_gpt3_retaining_knowledge_and_history(prompt, conversation_history)
     result = {"response": response}
+    return jsonify(result)
+
+@app.route('/anamoly', methods=['GET'])
+@cross_origin()
+def search_gpt():
+    args = request.args
+    id = args.get("id")
+    
+    #get result
+    result = {"response": False}
+    return jsonify(result)
+
+@app.route('/serviceRegression', methods=['GET'])
+@cross_origin()
+def search_gpt():
+    args = request.args
+    id = args.get("id")
+    
+    #get result
+    result = {"response": False}
     return jsonify(result)
 
 if __name__ == "__main__":

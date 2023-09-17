@@ -12,3 +12,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 X509-cert-6706186085905149183.pem
 ngrok.exe
+apikey.py
