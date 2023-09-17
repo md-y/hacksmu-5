@@ -29,6 +29,10 @@
 		];
 		return bgColors[asset['Criticality Level']];
 	}
+
+	function onResultClick(asset: Asset) {
+		console.log('Clicked:', asset['Asset ID']);
+	}
 </script>
 
 <div id="page">
@@ -43,11 +47,18 @@
 		/>
 	</div>
 	<div id="results-area">
-		{#each results as res}
-			<a class="result" style:border-color={getColor(res)} href="/info/{res['_id']}">
+		{#each results as res, i}
+			<div
+				class="result"
+				style:border-color={getColor(res)}
+				on:click={() => onResultClick(res)}
+				on:keydown={() => onResultClick(res)}
+				role="button"
+				tabindex={i}
+			>
 				<h3><b>{res['Asset Type']}</b> - #{res['Asset ID']}</h3>
 				<h3>{res['Installation Date']}</h3>
-			</a>
+			</div>
 		{/each}
 	</div>
 </div>
@@ -90,7 +101,7 @@
 		padding: 0.5em;
 
 		color: white;
-		text-decoration: none;
+		cursor: pointer;
 
 		display: flex;
 		justify-content: space-between;
