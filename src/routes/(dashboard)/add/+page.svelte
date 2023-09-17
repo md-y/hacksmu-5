@@ -23,7 +23,6 @@
 	let work_orders = {};
 
 	async function submit() {
-		console.log('submitted');
 		let push = await fetch(`http://localhost:5173/api/assets/update`, {
 			method: 'POST',
 			body: JSON.stringify({
@@ -50,6 +49,36 @@
 				}
 			})
 		});
+		
+		push = await push.json();
+
+		push = await fetch(`http://127.0.0.1:5000/post_asset`, {
+			method: 'POST',
+			body: JSON.stringify({
+				'Asset ID': asset_id,
+				'Asset Type': asset_name,
+				Cost: cost,
+				'Criticality Level': criticality,
+				'Energy Efficiency': energy_efficiency,
+				'Error Logs': error_logs,
+				Floor: floor,
+				'Height From Floor': height_from_floor,
+				'Installation Date': installation_date,
+				Manufacturer: manufacturer,
+				'Operational Logs': operational_logs,
+				'Operational Time (hrs)': operational_time,
+				Room: room,
+				'Service Reports': service_reports,
+				'Time Between Services': time_between_services,
+				Weight: weight,
+				'Work Orders': work_orders,
+				location: {
+					coordinates: [cord_x, cord_y],
+					type: 'Point'
+				}
+			})
+		});
+		
 		push = await push.json();
 	}
 
