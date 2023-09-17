@@ -13,6 +13,12 @@ export const GET: RequestHandler = async (event) => {
 	}
 
 	const collection = await getCBRECollection();
+
+	const indexExists = await collection.indexExists('location_2dsphere');
+	if (!indexExists) {
+		await collection.createIndex({ location: '2dsphere' });
+	}
+
 	const data = await collection.findOne({
 		location: {
 			$near: {
