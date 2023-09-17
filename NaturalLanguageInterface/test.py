@@ -3,7 +3,7 @@ import pandas as pd
 import json
 
 # Load the dataset from the JSON file
-with open("/Users/jayeshpaluru/Downloads/HackSMU/NaturalLanguageInterface/dataset.json", "r") as file:
+with open("/Users/jayeshpaluru/Downloads/HackSMU/Dataset Creation/dataset.json", "r") as file:
     json_data = json.load(file)
 data_json = pd.DataFrame(json_data)
 
