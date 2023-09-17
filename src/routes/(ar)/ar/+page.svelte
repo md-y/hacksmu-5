@@ -3,7 +3,6 @@
 	import ArPanel from './ArPanel.svelte';
 	import { currentAsset } from './panelstore';
 	import { fly } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
 
 	// https://github.com/sectorxusa/svelte-aframe-arjs/blob/master/src/routes/index.svelte
 
