@@ -1,49 +1,52 @@
 <script>
-
 </script>
 
 <div id="sidebar">
-    <h1>Our Project Name</h1>
-    <!-- Links here -->
-    <div class="sidebarItem">
-        <a href="/">Dashboard</a>
-    </div>
-    <div class="sidebarItem">
-        <a href="account">Account</a>
-    </div>
-    {#each {length: 5} as _ , i}
-        <div class="sidebarItem">
-            <a href="#/">Link {i + 2} </a>
-        </div>
-    {/each}
+	<h1>ASSet manager 😏</h1>
+	<!-- Links here -->
+	<div class="sidebarItem">
+		<a href="/">Dashboard</a>
+	</div>
+	<div class="sidebarItem">
+		<a href="account">Account</a>
+	</div>
+	<div class="sidebarItem">
+		<a href="/ar" target="_blank"
+			>Find Assets <svg xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 512 512"
+				><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path
+					fill="white"
+					d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+				/></svg
+			></a
+		>
+	</div>
 </div>
 
 <style>
-    a{
-        color: white;
-        text-decoration: none;
-    }
-    a:hover{
-        color: white;
-        text-decoration: none;
-    }
-    h1{
-        color: white;
-        text-align: center;
-    }
-    #sidebar{
-        display:flex;
-        flex-direction: column;
-        background-color: #4e73df;
-        background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
-        background-size: cover;
-        width: 14rem!important; 
-        height: 100vh;
-    }
-    .sidebarItem{
-        height: 25px;
-        color:white;
-        margin-left: 20px;
-        width: 14rem!important; 
-    }
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	a:hover {
+		color: white;
+		text-decoration: none;
+	}
+	h1 {
+		color: white;
+		text-align: center;
+	}
+	#sidebar {
+		display: flex;
+		flex-direction: column;
+		background-color: #f27746;
+		background-size: cover;
+		width: 14rem !important;
+		height: 100vh;
+	}
+	.sidebarItem {
+		height: 25px;
+		color: white;
+		margin-left: 20px;
+		width: 14rem !important;
+	}
 </style>
