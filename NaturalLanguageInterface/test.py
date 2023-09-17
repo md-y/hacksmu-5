@@ -1,12 +1,10 @@
 import openai
 import pandas as pd
-from datetime import datetime
+import json
 
 # Load the dataset from the JSON file
 with open("/Users/jayeshpaluru/Downloads/HackSMU/NaturalLanguageInterface/dataset.json", "r") as file:
-    import json
-    with open("/Users/jayeshpaluru/Downloads/HackSMU/NaturalLanguageInterface/dataset.json", "r") as file:
-        json_data = json.load(file)
+    json_data = json.load(file)
 data_json = pd.DataFrame(json_data)
 
 # Convert specific nested dictionary fields to their integer or float counterparts
@@ -16,7 +14,7 @@ for column in ['Height From Floor']:
     data_json[column] = data_json[column].apply(lambda x: float(x['$numberDouble']) if isinstance(x, dict) and '$numberDouble' in x else x)
 
 # Set up OpenAI API key
-openai.api_key = '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'
+openai.api_key = 'OPENAI_API_KEY'
 
 def detailed_summarize_dataset_json():
     """Generate a comprehensive summary of the dataset for the chatbot's context."""
@@ -40,29 +38,39 @@ def detailed_summarize_dataset_json():
     """
     return summary
 
-def chat_with_gpt3_and_dataset_json(user_query):
-    context = detailed_summarize_dataset_json()
-    combined_input = context + "\n\nUser: " + user_query + "\nAssistant:"
+def chat_with_gpt3_retaining_knowledge_and_history(user_query, conversation_history):
+    """
+    Chat with the GPT-3 model, maintaining a history of the conversation and retaining knowledge of the dataset.
+    """
+    conversation_history.append({"role": "user", "content": user_query})
+    
+    if len(conversation_history) == 1:
+        conversation_history.insert(0, {"role": "system", "content": "You are a natural language interface for a dataset meant to answer the user's questions with data from the dataset, and make predictions from the data when asked. " + detailed_summarize_dataset_json()})
+    
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are a natural language interface for a dataset meant to answer the user's questions with data from the dataset, and make predictions from the data when asked."},
-            {"role": "user", "content": combined_input}
-        ]
+        messages=conversation_history
     )
-    return response.choices[0].message['content'].strip()
+    
+    response_text = response.choices[0].message['content'].strip()
+    conversation_history.append({"role": "assistant", "content": response_text})
+    
+    return response_text, conversation_history
 
-def main_json():
-    print("GPT-3.5-Turbo Chatbot with CBRE Dataset Integration (JSON version)\n")
+def main_retaining_knowledge_and_history():
+    print("GPT-3.5-Turbo Chatbot with CBRE Dataset Integration\n")
     print("Type 'exit' to end the chat.\n")
+    
+    conversation_history = []
+    
     while True:
         user_input = input("You: ")
         if user_input.lower() == 'exit':
             print("Goodbye!")
             break
         else:
-            response = chat_with_gpt3_and_dataset_json(user_input)
+            response, conversation_history = chat_with_gpt3_retaining_knowledge_and_history(user_input, conversation_history)
             print("Chatbot: ", response)
 
 if __name__ == "__main__":
-    main_json()
+    main_retaining_knowledge_and_history()
