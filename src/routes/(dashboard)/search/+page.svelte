@@ -1,12 +1,15 @@
 <script lang="ts">
 	import type { Asset } from '../../../types';
+	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
 
 	let results: Asset[] = [];
 
-	async function onSearch(target: EventTarget & HTMLInputElement) {
-		const query = target.value;
-		if (!query) return;
+	function onSearch(target: EventTarget & HTMLInputElement) {
+		if (target.value) search(target.value);
+	}
 
+	async function search(query: string) {
 		const url = new URL('/api/assets/search', location.origin);
 		url.searchParams.set('query', query);
 
@@ -33,6 +36,12 @@
 	function onResultClick(asset: Asset) {
 		console.log('Clicked:', asset['Asset ID']);
 	}
+
+	onMount(() => {
+		if ($page.url.searchParams.has('query')) {
+			search($page.url.searchParams.get('query')!);
+		}
+	});
 </script>
 
 <div id="page">
